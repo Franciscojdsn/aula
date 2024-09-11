@@ -1,6 +1,6 @@
 import Botao from "../botao";
 import logo from '../../assets/imagens/logo.png';
-import { Outlet, Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 
 function Barra () {
     
@@ -14,10 +14,20 @@ function Barra () {
                 <img src="#" alt="" className="rounded-pill"/>
               </a>
             </div>
-            <Botao title="Login"/>
-            <Botao title="Entrar"/>
+            <Botao 
+            title="Login"
+            id="botao"
+            />
+            <Botao 
+            title="Entrar"
+            id="botao"
+            />
             <div>
-                  <Botao title="Sobre"/>
+              <Botao 
+              title="Sobre"
+              id="botao"
+              sobre="/Sobre"
+              />
             </div>
           </nav>
         </header>      
